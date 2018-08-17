@@ -14,7 +14,6 @@ class DoctorsController < ApplicationController
 
   def create
     doctor = Doctor.create(doctor_params)
-    puts doctor.appointments
     redirect_to doctor
   end
 
