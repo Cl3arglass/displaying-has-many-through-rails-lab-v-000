@@ -8,12 +8,13 @@ class DoctorsController < ApplicationController
   end
 
   def new
-    binding.pry
+    
     @doctor = Doctor.new
   end
 
   def create
     doctor = Doctor.create(doctor_params)
+    puts doctor.appointments
     redirect_to doctor
   end
 
