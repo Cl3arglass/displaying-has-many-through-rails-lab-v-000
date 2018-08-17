@@ -8,6 +8,7 @@ class DoctorsController < ApplicationController
   end
 
   def new
+    binding.pry
     @doctor = Doctor.new
   end
 
